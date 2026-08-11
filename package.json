@@ -47,3 +47,8 @@
   "stdout" : "done\n",
   "stderr" : ""
 }
+{
+  "returncode" : 0,
+  "stdout" : ".\n.\/(protected)\n.\/(protected)\/articles\n.\/(protected)\/articles\/new\n.\/(protected)\/articles\/[id]\n.\/(protected)\/media\n.\/(protected)\/settings\n.\/login\n.\/(protected)\/layout.tsx\n.\/login\/page.tsx\n",
+  "stderr" : ""
+}
