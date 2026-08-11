@@ -42,3 +42,8 @@
   "stdout" : ".\n.\/admin\n.\/admin\/articles\n.\/admin\/articles\/new\n.\/admin\/articles\/[id]\n.\/admin\/media\n.\/admin\/settings\n.\/admin\/login\n.\/analysis-opinion\n.\/policies\n.\/policies\/others\n.\/policies\/economy\n.\/policies\/politics\n.\/search\n.\/article\n.\/article\/[slug]\n.\/contact\n.\/editorial-policy\n.\/privacy\n.\/author\n.\/author\/[slug]\n.\/about\n---package.json for scripts---\n",
   "stderr" : ""
 }
+{
+  "returncode" : 0,
+  "stdout" : "done\n",
+  "stderr" : ""
+}
