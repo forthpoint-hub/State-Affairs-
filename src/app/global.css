@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  @apply bg-paper text-ink font-sans antialiased;
+}
+
+.font-headline {
+  @apply font-serif;
+}
+
+.prose-article {
+  @apply prose prose-neutral max-w-none prose-headings:font-serif prose-a:text-accent;
+}
