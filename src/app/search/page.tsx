@@ -31,7 +31,6 @@ export default function SearchPage({ searchParams }: { searchParams: { q?: strin
         <SearchBar />
       </Suspense>
       <Suspense fallback={<p className="mt-10 text-muted">Searching...</p>}>
-        {/* @ts-expect-error Server Component */}
         <Results q={q} />
       </Suspense>
     </div>
