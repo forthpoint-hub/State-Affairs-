@@ -256,4 +256,45 @@ export default function ArticleEditor({
         )}
       </div>
 
-      
+      <style jsx global>{`
+        .input {
+          width: 100%;
+          border: 1px solid #e2e0da;
+          border-radius: 0.5rem;
+          padding: 0.75rem;
+          font-size: 16px;
+          background: white;
+        }
+        .btn-primary {
+          background: #1a1a1a;
+          color: #fdfdfb;
+          padding: 0.9rem;
+          border-radius: 0.5rem;
+          font-weight: 600;
+        }
+        .btn-secondary {
+          background: white;
+          border: 1px solid #1a1a1a;
+          padding: 0.75rem;
+          border-radius: 0.5rem;
+          font-size: 14px;
+        }
+        .btn-tertiary {
+          background: #f3f2ee;
+          padding: 0.6rem;
+          border-radius: 0.5rem;
+          font-size: 13px;
+        }
+      `}</style>
+    </div>
+  );
+}
+
+function Field({ label, children }: { label: string; children: React.ReactNode }) {
+  return (
+    <div>
+      <label className="block text-xs uppercase tracking-wide text-muted mb-1">{label}</label>
+      {children}
+    </div>
+  );
+}
