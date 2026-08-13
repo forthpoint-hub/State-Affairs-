@@ -117,4 +117,45 @@ export default function SettingsForm({
           />
         </div>
       ))}
-      
+      <button
+        onClick={() => setLinks((prev) => [...prev, { platform: 'facebook', url: '' }])}
+        className="text-sm underline text-muted"
+      >
+        + Add another social link
+      </button>
+
+      {saved && <p className="text-sm text-accent">Saved.</p>}
+
+      <button onClick={handleSave} disabled={pending} className="btn-primary w-full">
+        {pending ? 'Saving...' : 'Save Settings'}
+      </button>
+
+      <style jsx global>{`
+        .input {
+          width: 100%;
+          border: 1px solid #e2e0da;
+          border-radius: 0.5rem;
+          padding: 0.75rem;
+          font-size: 16px;
+          background: white;
+        }
+        .btn-primary {
+          background: #1a1a1a;
+          color: #fdfdfb;
+          padding: 0.9rem;
+          border-radius: 0.5rem;
+          font-weight: 600;
+        }
+      `}</style>
+    </div>
+  );
+}
+
+function Field({ label, children }: { label: string; children: React.ReactNode }) {
+  return (
+    <div>
+      <label className="block text-xs uppercase tracking-wide text-muted mb-1">{label}</label>
+      {children}
+    </div>
+  );
+}
